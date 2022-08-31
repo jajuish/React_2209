@@ -60,3 +60,10 @@ const myDateString = ""
 const myNewArray = []
 
 // console.log(myNewArray)
+
+/**
+ * 7. try to understand and experiement with the following functions (can ask me for any help always):
+ * - map function (array)
+ * - reduce function (array)
+ * - filter function (array)
+ */
