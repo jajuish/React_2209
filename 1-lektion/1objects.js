@@ -8,24 +8,16 @@
  */
 
 // 1. basic objects
+const obj = {
+	// "key1": "content",
+	"key2": 4321,
+	"nestedKey": {
+		"nested1": "somthing",
+		52: "fifty-two"
+	},
+	key1: "string"
+}
 
-
-
-
-
-
-// const myVar = "sverige"
-
-// const obj = {
-// 	"a": "b",
-// 	1: "one",
-// 	myVar: "Sweden",
-// 	otherItems: {
-// 		itemOne: "1"
-// 	}
-// }
-
-// console.log(obj.a)
-// console.log(obj[1])
-// console.log(obj.myVar)
-// console.log(obj.sverige)
+console.log(obj.key1)
+console.log(obj.nestedKey.nested1)
+console.log(obj.nestedKey[52])

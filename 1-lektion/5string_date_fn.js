@@ -3,26 +3,21 @@
  * 
  */
 
-// ``
-const a = "a"
-const b = "b"
-let myString = `first char is ${a} and second is ${b}`
-let myOtherString = "first char is" + a + "and second is " + b
+// `` 
+const myVar = "a"
+const myString = `this is also a string ${myVar} other stuff`
 console.log(myString)
-console.log(myOtherString)
 
-// a few important/overused string functions
-myString = "Welcome to React @ ECU!"
-myOtherString = "You will love it here :)"
+// let myOtherString = "first char is " + a + "and second is " + b
 
-const myStringArray = myString.split(" ")
-console.log(myStringArray)
+const myStringArray = myString.split(" ") // overused
+// console.log(myStringArray)
 
-const myStringArrayJoined = myStringArray.join(" ")
-console.log(myStringArrayJoined)
+const myJoinedString = myStringArray.join("~") // overused
+// console.log(myJoinedString)
 
-let myVar = 4
-const intToString = myVar.toString() // VERY overused function!! For API's, printing out in the UI etc
+let myNewVar = 4
+const intToString = myNewVar.toString() // VERY overused function!! For API's, printing out in the UI etc
 
 /**
  * DATE FUNCTIONS

@@ -23,5 +23,23 @@ function addRegular (a, b) {
 	return a+b
 }
 const addArrow = (a, b) => a+b
-console.log( addRegular(4, 5) )
-console.log( addArrow(4, 6) )
+// console.log( addRegular(4, 5) )
+// console.log( addArrow(4, 6) )
+
+
+
+function myFunc (param) {
+	return param+1
+}
+// console.log(myFunc(2))
+
+const myArrowFn = (param) => {
+	const newVar = 2
+	return param+1
+}
+// console.log(myArrowFn(2))
+
+const myNewArrowFn = (param) => ({
+	"key1": param
+})
+console.log(myNewArrowFn(3))

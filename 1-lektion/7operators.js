@@ -10,3 +10,5 @@ console.log(a == b)
 
 // === is used for strict equality (types)
 console.log(a === b) // you should mostly use this one
+
+// ALWAYS USE ===

@@ -1,6 +1,7 @@
 {
-	"abc": "123",
-	"two": {
-		"a": 1
+	"name": "Ishita",
+	"abc": 123,
+	"nestedKey": {
+		"nestedkey1": 1
 	}
 }
