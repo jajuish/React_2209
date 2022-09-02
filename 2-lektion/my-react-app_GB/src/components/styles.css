@@ -1,0 +1,25 @@
+.list-div {
+	border: 1px solid black;
+}
+
+.outer-div {
+	display: flex;
+	flex-direction: column;
+	border: 2px solid gray;
+	max-width: 300px;
+	margin-top: 500px;
+}
+
+.bottom-bar {
+	display: flex;
+	flex-direction: row;
+}
+
+.bottom-item {
+	border: 1px solid rgb(62, 81, 33);
+}
+
+.my-table, table, th, tr {
+	border: 5px solid thistle;
+	border-style: dashed;
+}
