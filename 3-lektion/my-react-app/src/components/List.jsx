@@ -7,8 +7,7 @@ import random from "simple-random-number-generator"
  * List component returns a list of items
  * @returns jsx
  */
-const List = (list) => {
-	console.log("list===",list)
+const List = () => {
 	let params = {
 		min: 10,
 		max: 100

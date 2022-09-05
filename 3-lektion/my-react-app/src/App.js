@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
 
-      <List list={[1,2]} />
+      <List />
       <Image />
       <Flexform />
       <Table />
