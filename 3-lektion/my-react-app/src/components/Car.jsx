@@ -1,8 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
-const Car = () => {
-	const [carColor, setCarColor] = useState("red");
+const Car = ({ initialCarColor }) => {
+	console.log("initialCarColor===",initialCarColor)
+	const [carColor, setCarColor] = useState("");
 	const [showSeat, setShowSeat] = useState(true);
+
+	useEffect(() => {
+		setCarColor(initialCarColor)
+	}, [])
+
+	console.log("carColor==",carColor)
 
 	const onClickChangeColor = () => {
 		const newColor = carColor === "red" ? "blue" : "red";
