@@ -1,5 +1,5 @@
 import './App.css';
-import { Image, Flexform, Table, List } from "./components"
+import { Image, Flexform, Table, List, Car } from "./components"
 import BackToTop from "react-back-to-top-button";
 
 function App() {
@@ -10,8 +10,12 @@ function App() {
 
       <List />
       <Image />
+
+      <Car />
+
       <Flexform />
       <Table />
+      
 
       <BackToTop
         showOnScrollUp={false}

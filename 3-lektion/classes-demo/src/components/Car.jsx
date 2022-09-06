@@ -1,10 +1,11 @@
 import React from "react";
 
 class Car extends React.Component {
-	constructor(props) {
-		super(props);
+	constructor() {
+		super();
 		this.state = {
-			color: "red",
+			// FIRST
+			carColor: "red",
 			showSeat: true,
 		};
 	}
@@ -12,57 +13,52 @@ class Car extends React.Component {
 	componentDidMount() {
 		setTimeout(() => {
 			this.setState({
-				color: "green",
+				carColor: "green", // SECOND
 			});
 		}, 2000);
 	}
 
 	componentDidUpdate() {
-		console.log("CAR COMPONENT HAS BEEN UPDATED");
+		console.log("this component was updated");
 	}
 
-	changeCarColor() {
+	onClickButton() {
 		this.setState({
-			color: "blue",
+			carColor: "blue", // THIRD
 		});
-	}
+	};
 
-	unmountIt() {
+	onClickToggle = () => {
 		this.setState({
-			showSeat: false,
+			showSeat: !this.state.showSeat,
 		});
-	}
+	};
 
 	render() {
 		return (
 			<div>
-				<div style={{ border: "5px solid black" }}>
+				<div>
 					This div is a
-					<span style={{ color: this.state.color }}> {this.state.color} </span>
+					<span style={{ color: this.state.carColor }}>
+						{this.state.carColor}
+					</span>
 					car
-					{this.state.showSeat ? <Seat /> : <div />}
 				</div>
 
-				<button onClick={this.changeCarColor.bind(this)}>Change to blue</button>
+				<button onClick={this.onClickButton.bind(this)}>Change car colour to blue</button>
 
-				<button onClick={this.unmountIt.bind(this)}>Hide seat component</button>
+				<button onClick={this.onClickToggle}>
+					Toggle mount seat component
+				</button>
 
-				<div style={{ border: "5px solid black" }}>
-					Passed down prop: {this.props.list}
-				</div>
+				{this.state.showSeat ? <Seat /> : <div />}
 			</div>
 		);
 	}
 }
 
-class Seat extends React.Component {
-	componentWillUnmount() {
-		console.log("SEAT component has unmounted");
-	}
-
-	render() {
-		return <div>I am located inside the car</div>;
-	}
-}
+const Seat = () => {
+	return <div>This is a seat</div>;
+};
 
 export default Car;

@@ -11,7 +11,7 @@ function App() {
         </p>
       </header>
 
-      <Car list={[1,2]} />
+      <Car />
     </div>
   );
 }
