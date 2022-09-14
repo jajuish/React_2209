@@ -1,0 +1,17 @@
+[
+	{
+		"name": "Phone",
+		"imgSrc": "/images/product-1.jpg",
+		"description": ["this is a phone", "hello"]
+	},
+	{
+		"name": "magic mop",
+		"imgSrc": "/images/product-2.jpg",
+		"description": ["this mop is magic", "hi"]
+	},
+	{
+		"name": "shades",
+		"imgSrc": "/images/product-3.jpg",
+		"description": ["thug lyf", "hej"]
+	}
+]

@@ -1,7 +1,13 @@
 .wrapper {
-	border: 2px solid brown;
-	height: 300px;
+	border: 2px solid blueviolet;
+	height: 375px;
 	width: 200px;
 	padding: 10px;
 	margin: 20px;
+}
+
+.product-image {
+	height: 200px;
+	width: 200px;
+	object-fit: cover;
 }
