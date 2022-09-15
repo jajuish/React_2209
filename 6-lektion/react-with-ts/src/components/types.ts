@@ -1,21 +1,22 @@
 interface Child {
-	key: string
-	param?: number
+	key: string,
+	optionalKey?: number[]
 }
 
 export interface Parent {
-	thisIsANestedObject: Child
-	thisIsAnotherNestedOne: {
-		key: string
-		param?: number
+	someKey: number,
+	aNestedObject: Child,
+	anotherNestedObject: {
+		param?: () => Date,
+		nested?: {}[]
 	}
 }
 
 const obj: Parent = {
-	thisIsANestedObject: {
-		key: "string",
+	someKey: 1,
+	aNestedObject: {
+		key: "",
+		optionalKey: [4,2,0]
 	},
-	thisIsAnotherNestedOne: {
-		key: "anotherstring"
-	}
+	anotherNestedObject: {}
 }
